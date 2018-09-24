@@ -1,0 +1,43 @@
+/* 元件 */
+$tag-height: .9rem !default; // 高度
+$tag-px: .2rem !default; // 内间距
+$tag-bg: $color-main !default; // 背景颜色
+$tag-color: #fff !default; // 文本颜色
+$tag-font-size: $font-size-small !default; // 字体大小
+$tag-bg-green: $color-bg-green !default;
+$tag-bg-gray: $color-text-weaking !default;
+
+// 标签
+.pv-tag {
+  display: inline-block;
+  line-height: $tag-height;
+  padding: 0 $tag-px;
+  font-size: $tag-font-size;
+  color: $tag-color;
+  vertical-align: middle;
+  background: $tag-bg;
+  border-radius: 3px;
+}
+
+.pv-tag-green {
+  display: inline-block;
+  line-height: $tag-height;
+  padding: 0 $tag-px;
+  font-size: $tag-font-size;
+  color: $tag-color;
+  vertical-align: middle;
+  background: $tag-bg-green;
+  border-radius: 3px;
+}
+
+.pv-tag-gray {
+  display: inline-block;
+  line-height: $tag-height;
+  padding: 0 $tag-px;
+  font-size: $tag-font-size;
+  color: $tag-color;
+  vertical-align: middle;
+  background: $tag-bg-gray;
+  border-radius: 3px;
+}
+

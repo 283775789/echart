@@ -1,0 +1,171 @@
+/* 全局样式常量 */
+// stylelint-disable declaration-no-important
+
+// ---------- flex ----------
+.FLEX1 {
+  flex: 1;
+}
+
+// ---------- 背景 ----------
+.BG_WHITE {
+  background: #fff;
+}
+
+
+// ---------- 文本:颜色 ----------
+.COLOR_MAIN {
+  color: $color-text-main !important;
+}
+
+.COLOR_SECONDARY {
+  color: $color-text-secondary !important;
+}
+
+.COLOR_WEAKING {
+  color: $color-text-weaking !important;
+}
+
+.COLOR_PRICE {
+  color: $color-main !important;
+}
+
+.COLOR_LINK {
+  color: $color-text-link !important;
+}
+
+// ---------- 文本:尺寸 ----------
+.TEXT_SMALL {
+  font-size: $font-size-small !important;
+}
+
+.TEXT_MEDIUM {
+  font-size: $font-size-medium !important;
+}
+
+.TEXT_LARGE {
+  font-size: $font-size-large !important;
+}
+
+.TEXT_HUGE {
+  font-size: $font-size-huge !important;
+}
+
+// ---------- 文本: 字重 ----------
+.TEXT_BOLD {
+  font-weight: 700 !important;
+}
+
+// ---------- 文本: 对齐 ----------
+.TEXT_CENTER {
+  text-align: center !important;
+}
+
+.TEXT_RIGHT {
+  text-align: right !important;
+}
+
+// ---------- 间距 ----------
+.MT_0 {
+  margin-top: 0 !important;
+}
+
+.MB_TINY {
+  margin-bottom: $spacing-tiny !important;
+}
+
+.MB_SMAlL {
+  margin-bottom: $spacing-small !important;
+}
+
+.MB_MEDIUM {
+  margin-bottom: $spacing-medium !important;
+}
+
+.MB_LARGE {
+  margin-bottom: $spacing-large !important;
+}
+
+.ML_SMALL {
+  margin-left: $spacing-small !important;
+}
+
+.P_MEDIUM {
+  padding: $spacing-medium !important;
+}
+
+.PY_STEP {
+  padding-top: $spacing-step !important;
+  padding-bottom: $spacing-step !important;
+}
+
+.PY_TINY {
+  padding-top: $spacing-tiny !important;
+  padding-bottom: $spacing-tiny !important;
+}
+
+.PY_MEDIUM {
+  padding-top: $spacing-medium !important;
+  padding-bottom: $spacing-medium !important;
+}
+
+.PX_MEDIUM {
+  padding-right: $spacing-medium !important;
+  padding-left: $spacing-medium !important;
+}
+
+.PY_LARGE {
+  padding-top: 1.75rem !important;
+  padding-bottom: 1.75rem !important;
+}
+
+.PY_LARGE_LO {
+  padding-top: 1.75rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+// ---------- 边框 ----------
+.BORDER_BOTTOM {
+  border-bottom: .5px solid $color-border-main;
+}
+
+
+// ---------- 超出省略文本 ----------
+.ELLIPSIS {
+  @include cutoff();
+}
+
+// ---------- 旋转 ----------
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ROTATING {
+  transform-origin: center center;
+  animation: rotating 2s linear infinite;
+}
+
+
+// ---------- 动画:呼吸效果 ----------
+@keyframes breath {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.BREATH {
+  animation: breath 1.5s infinite;
+}

@@ -1,0 +1,100 @@
+/* 按钮 */
+$btn-height: 2rem !default; // 高度
+$small-btn-height: 1.5rem !default; // 高度
+$btn-font-size: $font-size-medium !default; // 字体大小
+$btn-px: $spacing-small !default; // 水平内间距
+$main-btn-bg: $color-main !default; // 主按钮背景
+$main-btn-color: #fff !default; // 主按钮文本色
+$main-btn-border-color: $main-btn-bg !default; // 主按钮边框颜色
+$secondary-btn-bg: $color-secondary !default; // 主按钮背景
+$secondary-btn-color: #fff !default; // 主按钮文本色
+$secondary-btn-border-color: $secondary-btn-bg !default; // 主按钮边框颜色
+$border-btn-bg: #fff !default; // 主按钮背景
+$border-btn-color: $color-border-button !default; // 主按钮文本色
+$border-btn-border-color: $color-border-button !default; // 主按钮边框颜色
+
+// 按钮: 容器
+.pv-btn {
+  position: relative;
+  display: inline-block;
+  height: $btn-height;
+  line-height: $btn-height - .1rem;
+  padding: 0 $btn-px;
+  font-size: $btn-font-size;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: $btn-height / 2;
+}
+
+.pv-btn.xdisabled {
+  pointer-events: none;
+  opacity: .45;
+}
+
+// 按钮: 主要
+.pv-btn.xmain {
+  color: $main-btn-color;
+  background-color: $main-btn-bg;
+  background-image: linear-gradient(to bottom, #c63435, #e34546);
+  box-shadow: 0 3px 6px rgba(190, 48, 49, .3);
+}
+
+// 按钮: 铺助
+.pv-btn.xsecondary {
+  color: $secondary-btn-color;
+  background: $secondary-btn-bg;
+  border-color: $secondary-btn-border-color;
+}
+
+// 按钮: 图片背景
+.pv-btn.xbgyellow {
+  width: 9.925rem;
+  height: 3.45rem;
+  line-height: 3rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #f32f30;
+  background: url("~@images/btn-bg1.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+// 按钮: 边框
+.pv-btn.xborder {
+  color: $border-btn-color;
+  background: $border-btn-bg;
+  border-color: $border-btn-border-color;
+}
+
+// 按钮: 小
+.pv-btn.xsmall {
+  height: $small-btn-height;
+  line-height: $small-btn-height;
+}
+
+// 按钮: 全尺寸
+.pv-btn.xfull {
+  display: block;
+  flex-grow: 0;
+  width: 70%;
+  margin: 0 auto;
+}
+
+// 按钮: 100%尺寸
+.pv-btn.xxfull {
+  display: block;
+  flex-grow: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+// 底部按钮容器
+.pv-btnfooter {
+  // stylelint-disable
+  padding-top: 0 !important;
+  @extend .pv-footer;
+}
+
+// 按钮: 提现
+.pv-btn.xwithdraw {
+  display: none;
+}

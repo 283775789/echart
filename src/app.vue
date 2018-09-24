@@ -1,0 +1,37 @@
+<template>
+  <div id="app" style="padding: 100px 200px;">
+    <div id="demo" style="height:300px;"></div>
+  </div>
+</template>
+
+<script>
+var echarts = require('echarts')
+
+export default {
+  name: 'app',
+
+  mounted () {
+    var myChart = echarts.init(document.getElementById('demo'))
+    window.myChart = myChart
+
+    var option = {
+      title: {
+        text: 'The first chart'
+      },
+      xAxis: {
+        type: 'category',
+        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+      },
+      yAxis: {
+        type: 'value'
+      },
+      series: [{
+        data: [820, 932, 901, 934, 1290, 1330, 1320],
+        type: 'line'
+      }]
+    }
+
+    myChart.setOption(option)
+  }
+}
+</script>
